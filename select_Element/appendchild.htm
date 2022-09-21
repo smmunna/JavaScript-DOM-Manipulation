@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <ul id="menu">
+            <li>Name</li>
+        </ul>
+    </body>
+</html>
+
+<script>
+    function createMenuItem(name){
+        let li = document.createElement('li')
+        li.textContent=name;
+        return li;
+    }
+    
+    const menu = document.querySelector('#menu');
+    menu.appendChild(createMenuItem('Home'));
+    menu.appendChild(createMenuItem('About'));
+    menu.appendChild(createMenuItem('Download'));
+
+</script>
