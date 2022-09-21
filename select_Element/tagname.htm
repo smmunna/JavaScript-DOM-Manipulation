@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h2>I am a tag Name</h2>
+        <h2>I am a tag Name</h2>
+        <button id="btn">Suvmit</button>
+        <p id="output"></p>
+    </body>
+</html>
+<script>
+    const tag = document.getElementsByTagName('h2');
+    const output = document.getElementById('output');
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click',()=>{
+        output.innerText = `${tag.length} TAG NAME`;
+    })
+
+</script>
