@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h2 onclick="this.innerHTML='Hello world!'">I am Okay</h2>
+        <input type="text" id="input" onchange="uppercase()">
+        <h3 onmouseover="this.innerHTML='On Hover'" onmouseout="this.innerHTML='On Moust Out'">Something will change Here</h3>
+    </body>
+</html>
+
+<script>
+ function uppercase(){
+   
+  let x = document.getElementById("input");
+  x.value = x.value.toUpperCase();
+}
+ 
+</script>
